@@ -112,3 +112,35 @@ body {
         margin: 10px 0;
     }
 }
+
+.social {
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+
+
+
+    &__link {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+        transition: .5s;
+        line-height: 1;
+
+        &:hover {
+            border-color: white;
+            color: #FFC107;
+        }
+    }
+
+    &__twitter {
+        font-size: 5rem;
+    }
+}

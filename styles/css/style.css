@@ -417,4 +417,40 @@ body {
   line-height: 0.8;
   margin: 10px 0;
 }
+
+.social__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 5rem;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  line-height: 1;
+}
+
+.social__link:hover {
+  border-color: white;
+  color: #FFC107;
+}
+
+.social__twitter {
+  font-size: 5rem;
+}
 /*# sourceMappingURL=style.css.map */
