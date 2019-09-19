@@ -25,14 +25,18 @@ body {
 
 .features {
     background-image: url(/images/background-pattern.png);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.features:nth-child(odd) {
     background-color: #617DA2;
 }
 
-.screenshots {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
+.features:nth-child(even) {
+    background-color: rgb(78, 110, 151);
 }
 
 .title-bar {
@@ -42,12 +46,69 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &__text {
         color: white;
         font-size: 3.4rem;
         margin: 0;
         text-shadow: 2px 2px black;
+    }
+}
+
+.trailer__container {
+    width: 100%;
+    text-align: center;
+}
+
+.trailer__youtube {
+    width: 80%;
+    // height: auto;
+}
+
+.features {
+    &__container {
+        width: 100%;
+    }
+
+    &__feature {
+        padding: 40px 100px;
+        border: 3px dashed rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        border: 5px solid brown;
+        border-radius: 3px;
+        margin-right: 50px;
+        width: 35%;
+    }
+
+    &__text {
+        flex-grow: 1;
+        background-color: #617DA2;
+    }
+
+    &__header {
+        text-transform: uppercase;
+        color: #FFC107;
+        text-shadow: 2px 2px black;
+        margin: 0;
+        border: 1px solid #dddddd;
+        padding: 10px;
+        font-size: 3rem;
+    }
+
+    &__list-container {
+        list-style: square;
+        padding-left: 40px;
+        color: white;
+        font-size: 2.0rem;
+    }
+
+    &__list-element {
+        line-height: 0.8;
+        margin: 10px 0;
     }
 }
