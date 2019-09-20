@@ -15,8 +15,8 @@
 
 <body>
     <section class="hero">
-        <img src="./images/logo.png" alt="Mysterious Realms RPG">
-        <iframe src="http://store.steampowered.com/widget/752800/" frameborder="0" width="80%" height="190"></iframe>
+        <img class="hero__img" src="./assets/images/logo-large.png" alt="Mysterious Realms RPG">
+        <iframe class="hero__widget" src="http://store.steampowered.com/widget/752800/"></iframe>
     </section>
     <section class="screenshots features">
         <div class="title-bar">
@@ -24,28 +24,28 @@
         </div>
         <div class="slideshow">
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/1.png">
+                <img class="slideshow__img" src="/assets/images/carousel/1.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/2.png">
+                <img class="slideshow__img" src="/assets/images/carousel/2.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/3.png">
+                <img class="slideshow__img" src="/assets/images/carousel/3.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/4.png">
+                <img class="slideshow__img" src="/assets/images/carousel/4.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/5.png">
+                <img class="slideshow__img" src="/assets/images/carousel/5.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/6.png">
+                <img class="slideshow__img" src="/assets/images/carousel/6.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/7.png">
+                <img class="slideshow__img" src="/assets/images/carousel/7.png">
             </div>
             <div class="slideshow__item fade">
-                <img class="slideshow__img" src="/images/carousel/8.png">
+                <img class="slideshow__img" src="/assets/images/carousel/8.png">
             </div>
 
             <a class="slideshow__btn-prev" >&#10094;</a>
@@ -60,11 +60,11 @@
         <div class="title-bar">
             <h2 class="title-bar__text">Trailer</h2>
         </div>
-        <div class="trailer__container">
-            <iframe class="trailer__youtube" width="860" height="640"
-                src="https://www.youtube.com/embed/FG4YLQBGY98?rel=0&amp;showinfo=0" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        <video class="afterglow trailer__container" id="myvideo" width="960" height="540"
+            poster="/assets/images/poster.png">
+            <source class="trailer__youtube" type="video/mp4"
+                src="/assets/video/Mysterious-Realms-Release-Trailer.mp4" />
+        </video>
     </section>
     <section class="overview features">
         <div class="title-bar">
@@ -72,7 +72,7 @@
         </div>
         <div class="features__container">
             <div class="features__feature">
-                <img class="features__img" src="/images/gifs/feature1.gif">
+                <img class="features__img" src="/assets/images/gifs/feature1.gif">
                 <div class="features__text">
                     <h3 class="features__header">Engage in unique crystal-based combat</h3>
                     <ul class="features__list-container">
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="features__feature">
-                <img class="features__img" src="/images/gifs/feature2.gif">
+                <img class="features__img" src="/assets/images/gifs/feature2.gif">
                 <div class="features__text">
                     <h3 class="features__header">Face deadly missions</h3>
                     <ul class="features__list-container">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="features__feature">
-                <img class="features__img" src="/images/gifs/feature3.gif">
+                <img class="features__img" src="/assets/images/gifs/feature3.gif">
                 <div class="features__text">
                     <h3 class="features__header">Explore Dangerous Areas</h3>
                     <ul class="features__list-container">
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="features__feature">
-                <img class="features__img" src="/images/gifs/feature4.gif">
+                <img class="features__img" src="/assets/images/gifs/feature4.gif">
                 <div class="features__text">
                     <h3 class="features__header">Develop your party</h3>
                     <ul class="features__list-container">
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div class="features__feature">
-                <img class="features__img" src="/images/gifs/feature5.gif">
+                <img class="features__img" src="/assets/images/gifs/feature5.gif">
                 <div class="features__text">
                     <h3 class="features__header">Overcome random events</h3>
                     <ul class="features__list-container">
@@ -139,10 +139,12 @@
             <a class="social__link social__twitter" href="https://twitter.com/mrealmsRPG" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
             <a class="social__link social__presskit" href="http://www.mrealms.com/press"target="_blank">Presskit</a>
         </div>
-        <iframe src="http://store.steampowered.com/widget/752800/" frameborder="0" width="80%" height="190"></iframe>
+        <iframe class="hero__widget" src="http://store.steampowered.com/widget/752800/"></iframe>
     </section>
-    <script src="/js/carousel.js">
+    <script src="/javascript/carousel.js">
     </script>
+    <script src="/javascript/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 </body>
 
 </html>
